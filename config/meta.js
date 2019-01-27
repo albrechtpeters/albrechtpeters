@@ -3,7 +3,7 @@ module.exports = {
   siteTitle: `albrechtpeters — eine (ehemalige) Webagentur mit viel Liebe zu digitalem Handwerk`,
   siteTitleAlt: `albrechtpeters`,
   siteTitleShort: `ap`,
-  siteDescription: `Von 2013 bis 2018 TODO`,
+  siteDescription: `Wir haben uns neuen Herausforderungen zugewandt, weshalb wir unter diesem Namen nicht länger tätig sind. Ihr erreicht uns nun wie folgt...`,
   manifest: {
     themeColor: `#d93833`,
     backgroundColor: `#d93833`,
