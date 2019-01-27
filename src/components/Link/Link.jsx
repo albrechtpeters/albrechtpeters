@@ -3,14 +3,15 @@ import PropTypes from 'prop-types'
 import GoogleAnalytics from 'react-ga'
 import { Link as GatsbyLink } from 'gatsby'
 
-const Link = ({ to, from, children, className }) => (
+const Link = ({ to, children, className }) => (
   <GatsbyLink
     to={to}
+    style={{ color: 'red' }}
     className={className}
     onClick={() => {
       GoogleAnalytics.event({
-        category: 'Link',
-        action: `[clicked] ${from}`,
+        category: `Link`,
+        action: `[clicked]`,
         label: to,
       })
     }}
@@ -21,14 +22,12 @@ const Link = ({ to, from, children, className }) => (
 
 Link.propTypes = {
   to: PropTypes.string.isRequired,
-  from: PropTypes.string,
   children: PropTypes.any.isRequired,
   className: PropTypes.string,
 }
 
 Link.defaultProps = {
   className: ``,
-  from: `unnamed link`,
 }
 
 export default Link

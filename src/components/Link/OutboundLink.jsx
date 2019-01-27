@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import GoogleAnalytics from 'react-ga'
 
-const OutboundLink = ({ to, from, target, children, className }) => (
+const OutboundLink = ({ to, target, children, className }) => (
   <a
     href={to}
     target={target}
@@ -10,8 +10,8 @@ const OutboundLink = ({ to, from, target, children, className }) => (
     rel="noopener"
     onClick={() => {
       GoogleAnalytics.event({
-        category: 'Outbound Link',
-        action: `[clicked] ${from}`,
+        category: `Outbound Link`,
+        action: `[clicked]`,
         label: to,
       })
     }}
@@ -22,7 +22,6 @@ const OutboundLink = ({ to, from, target, children, className }) => (
 
 OutboundLink.propTypes = {
   to: PropTypes.string.isRequired,
-  from: PropTypes.string.isRequired,
   target: PropTypes.string,
   children: PropTypes.any.isRequired,
   className: PropTypes.string,

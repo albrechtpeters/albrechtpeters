@@ -4,14 +4,14 @@ import Helmet from 'react-helmet'
 
 import config from '../../../config/meta'
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta }) {
   const metaDescription = description || config.siteDescription
   const schemaOrg = [
     {
       '@context': `http://schema.org`,
       '@type': `WebSite`,
       url: config.siteUrl,
-      name: title,
+      name: config.siteTitle,
       description: config.siteDescription,
       alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
       author: {
@@ -26,8 +26,7 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s - ${config.siteTitle}`}
+      title={config.siteTitle}
       meta={[
         {
           name: `description`,
@@ -35,7 +34,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: config.siteTitle,
         },
         {
           property: `og:description`,
@@ -55,7 +54,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: config.siteTitle,
         },
         {
           name: `twitter:description`,
@@ -72,7 +71,6 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.array,
-  title: PropTypes.string.isRequired,
 }
 
 SEO.defaultProps = {

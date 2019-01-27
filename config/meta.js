@@ -1,17 +1,17 @@
 module.exports = {
-  siteUrl: `https://www.example.com`,
-  siteTitle: `Gatsby Starter Styled`,
-  siteTitleAlt: `Gatsby Starter Styled`,
-  siteTitleShort: `Gatsby Styled`,
-  siteDescription: `Kick off your next, great Gatsby project with this starter.`,
+  siteUrl: `https://albrechtpeters.de`,
+  siteTitle: `albrechtpeters — eine (ehemalige) Webagentur mit viel Liebe zu digitalem Handwerk`,
+  siteTitleAlt: `albrechtpeters`,
+  siteTitleShort: `albrechtpeters`,
+  siteDescription: `Von 2013 bis 2018 TODO`,
   manifest: {
-    themeColor: `#253688`,
-    backgroundColor: `#253688`,
+    themeColor: `#d93833`,
+    backgroundColor: `#d93833`,
   },
   googleAnalyticsId: `UA-XXXXX`,
-  facebook: `Your optional Facebook App ID`,
-  twitter: `Your Twitter username`,
+  facebook: ``,
+  twitter: ``,
   schema: {
-    author: `Jane Doe`,
+    author: `Gregor Albrecht & Felix Peters`,
   },
 }

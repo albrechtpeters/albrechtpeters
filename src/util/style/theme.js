@@ -2,27 +2,19 @@
  * This is our custom theme where we define global styles.
  * It should serve as a guideline for styling, but not all styles *have* to be taken from here.
  */
-const breakpoints = ['40em', '52em', '64em']
+const breakpoints = ['700px']
 
 /**
  * Primary: Colors to use for actionable items, such as links, buttons etc.
  * Grey: Colors for items that are not that important
  */
 const colors = {
-  pageBackground: 'hsl(228, 33%, 97%)',
   white: 'hsl(0, 0%, 100%)',
   black: 'hsl(0, 0%, 0%)',
-  primary: {
-    100: 'hsl(223, 88%, 97%)',
-    200: 'hsl(223, 72%, 90%)',
-    300: 'hsl(223, 71%, 76%)',
-    400: 'hsl(227, 63%, 67%)',
-    500: 'hsl(230, 65%, 63%)',
-    600: 'hsl(230, 52%, 53%)',
-    700: 'hsl(230, 51%, 43%)',
-    800: 'hsl(230, 57%, 34%)',
-    900: 'hsl(231, 55%, 28%)',
-  },
+  pageBackground: 'hsl(2, 69%, 53%)',
+  offWhite: 'hsl(12, 100%, 98%)',
+  brand: 'hsl(2, 69%, 53%)',
+  text: 'hsl(213, 11%, 35%)',
   grey: {
     100: 'hsl(210, 17%, 98%)',
     200: 'hsl(207, 22%, 90%)',
@@ -34,39 +26,6 @@ const colors = {
     800: 'hsl(215, 17%, 30%)',
     900: 'hsl(215, 23%, 16%)',
   },
-  red: {
-    100: 'hsl(360, 77%, 95%)',
-    200: 'hsl(360, 79%, 81%)',
-    300: 'hsl(360, 71%, 73%)',
-    400: 'hsl(360, 70%, 64%)',
-    500: 'hsl(360, 71%, 53%)',
-    600: 'hsl(360, 65%, 45%)',
-    700: 'hsl(360, 61%, 38%)',
-    800: 'hsl(360, 63%, 31%)',
-    900: 'hsl(360, 60%, 24%)',
-  },
-  yellow: {
-    100: 'hsl(44, 100%, 98%)',
-    200: 'hsl(44, 90%, 92%)',
-    300: 'hsl(45, 86%, 86%)',
-    400: 'hsl(44, 90%, 80%)',
-    500: 'hsl(43, 87%, 67%)',
-    600: 'hsl(44, 57%, 52%)',
-    700: 'hsl(43, 59%, 42%)',
-    800: 'hsl(43, 64%, 34%)',
-    900: 'hsl(44, 66%, 22%)',
-  },
-  green: {
-    100: 'hsl(142, 81%, 94%)',
-    200: 'hsl(141, 67%, 80%)',
-    300: 'hsl(145, 65%, 68%)',
-    400: 'hsl(146, 57%, 65%)',
-    500: 'hsl(145, 55%, 49%)',
-    600: 'hsl(145, 55%, 41%)',
-    700: 'hsl(145, 59%, 33%)',
-    800: 'hsl(155, 63%, 26%)',
-    900: 'hsl(156, 61%, 20%)',
-  },
 }
 
 /**
@@ -74,6 +33,7 @@ const colors = {
  * It's recommended to use powers of two to ensure alignment across the entire project
  */
 const space = [0, 4, 8, 16, 32, 64, 128, 256, 512]
+const cardWidth = `700px`
 
 /**
  * Typographic scale
@@ -106,6 +66,7 @@ export const theme = {
   breakpoints,
   colors,
   space,
+  cardWidth,
   fontSizes,
   lineHeights,
   fontWeights,

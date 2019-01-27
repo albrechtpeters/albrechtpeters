@@ -1,28 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider, theme } from 'util/style'
+import GlobalStyles from 'util/style/GlobalStyles'
 
 import Header from 'components/Header'
-import Footer from 'components/Footer'
-import { Box, Container } from 'components/Grid'
 
-import config from '../../../config/meta'
+// eslint-disable-next-line no-unused-vars
+import Aleo from 'typeface-aleo'
+// eslint-disable-next-line no-unused-vars
+import SourceSansPro from 'typeface-source-sans-pro'
+
+import Center from './Center'
+import Container from './Container'
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <>
-      <Header siteTitle={config.siteTitle || config.siteTitleAlt} />
-      <Container maxWidth="700px" px={3}>
+    <Center>
+      <GlobalStyles />
+      <Container maxWidth="700px" px={5} py={4}>
+        <Header />
         {children}
-        <Box mt={3}>
-          <Footer>
-            Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </Footer>
-        </Box>
       </Container>
-    </>
+    </Center>
   </ThemeProvider>
 )
 

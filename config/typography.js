@@ -1,11 +1,12 @@
 import Typography from 'typography'
 
 const typography = new Typography({
-  title: 'Test',
-  baseFontSize: '18px',
-  baseLineHeight: 1.45,
+  title: 'albrechtpeters',
+  baseFontSize: '24px',
+  baseLineHeight: 1.74,
   /* Use the system font stack as fallback */
   headerFontFamily: [
+    'Aleo',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -18,6 +19,7 @@ const typography = new Typography({
     'Segoe UI Symbol',
   ],
   bodyFontFamily: [
+    'Source Sans Pro',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
