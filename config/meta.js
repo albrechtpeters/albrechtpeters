@@ -2,7 +2,7 @@ module.exports = {
   siteUrl: `https://albrechtpeters.de`,
   siteTitle: `albrechtpeters — eine (ehemalige) Webagentur mit viel Liebe zu digitalem Handwerk`,
   siteTitleAlt: `albrechtpeters`,
-  siteTitleShort: `albrechtpeters`,
+  siteTitleShort: `ap`,
   siteDescription: `Von 2013 bis 2018 TODO`,
   manifest: {
     themeColor: `#d93833`,
