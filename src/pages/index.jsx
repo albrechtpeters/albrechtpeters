@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from 'components/Layout'
 import SEO from 'components/SEO'
 import StrikeThrough from 'components/StrikeThrough'
+import Underline from 'components/Underline'
 import Hero from 'components/Hero'
 import Text from 'components/Text'
 import { Flex } from 'components/Grid'
@@ -13,11 +14,12 @@ const IndexPage = () => (
   <Layout>
     <SEO />
     <Hero>
-      Wir <StrikeThrough>sind</StrikeThrough> waren eine Webagentur mit viel
-      Liebe zu digitalem Handwerk und einzigartigen Webseiten.
+      Wir <StrikeThrough>sind</StrikeThrough> <Underline>waren</Underline> eine
+      Webagentur mit viel Liebe zu digitalem Handwerk und einzigartigen
+      Webseiten.
     </Hero>
     <Text>
-      Von 2013 bis 2018 haben wir für unsere wunderbare Kunden eine Vielzahl
+      Von 2013 bis 2018 haben wir für unsere wunderbaren Kunden eine Vielzahl
       verschiedener, digitaler Projekte realisiert. Mittlerweile haben wir uns
       neuen Herausforderungen zugewandt, weshalb wir unter diesem Namen nicht
       länger tätig sind. Ihr erreicht uns nun wie folgt:

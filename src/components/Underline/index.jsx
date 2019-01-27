@@ -1,19 +1,19 @@
 import styled, { themeGet } from 'util/style'
-import strike from './strike.svg'
+import underline from './underline.svg'
 
-const StrikeThrough = styled.span`
+const Underline = styled.span`
   position: relative;
 
   &::before {
     content: '';
-    width: 110%;
+    width: 95%;
     height: 100%;
-    background: url(${strike});
+    background: url(${underline});
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    top: 50%;
-    left: -5%;
+    top: 93%;
+    left: 3%;
     margin-top: -10px;
   }
 
@@ -22,4 +22,4 @@ const StrikeThrough = styled.span`
   }
 `
 
-export default StrikeThrough
+export default Underline
