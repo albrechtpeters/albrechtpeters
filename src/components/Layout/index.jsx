@@ -17,7 +17,7 @@ const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <Center>
       <GlobalStyles />
-      <Container maxWidth="700px" px={5} py={4}>
+      <Container maxWidth="700px" px={[4, 5]} py={4}>
         <Header />
         {children}
       </Container>

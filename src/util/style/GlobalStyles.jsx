@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
   html,
   body {
     min-height: 100vh;
-    min-width: 320px;
+    min-width: 340px;
     width: 100%;
     padding: 0;
     margin: 0;
