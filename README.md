@@ -7,7 +7,7 @@
   albrechtpeters
 </h1>
 
-Site built with `gatsby-starter-styled`, yet another Gatsby starter boilerplate.
+Site built with [`gatsby-starter-styled`](https://github.com/gregoralbrecht/gatsby-starter-styled), yet another Gatsby starter boilerplate.
 
 ## Features
 
