@@ -1,13 +1,13 @@
 <p align="center">
-  <a href="https://github.com/gregoralbrecht/gatsby-starter-styled">
-    <img alt="gatsby-starter-styled" src="src/images/favicon.png" width="80px" />
+  <a href="https://github.com/albrechtpeters/albrechtpeters">
+    <img alt="albrechtpeters" src="src/images/favicon.png" width="80px" />
   </a>
 </p>
 <h1 align="center">
-  gatsby-starter-styled
+  albrechtpeters
 </h1>
 
-Yet another Gatsby starter boilerplate. I built this for my personal use, but maybe someone finds it helpful.
+Site built with `gatsby-starter-styled`, yet another Gatsby starter boilerplate.
 
 ## Features
 
